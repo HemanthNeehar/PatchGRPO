@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Base Model](https://img.shields.io/badge/model-gemma--4--31b--it--qat--w4a16--ct-purple.svg)](https://huggingface.co/google/gemma-4-31b-it)
 [![Benchmark](https://img.shields.io/badge/Kaggle%20SWE--bench-17.0%25%20Pass%401-brightgreen.svg)]()
-[![Paper Track](https://img.shields.io/badge/arXiv-Paper%20Ready-red.svg)](papers/PatchGRPO_Paper_Latest.pdf)
+[![Paper Track](https://img.shields.io/badge/arXiv-Paper%20Ready-red.svg)](papers/PatchGRPO_ArXiv_Paper.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Official repository for **PatchGRPO**, an open-source autonomous developer agent framework competing in the **Google - The Gemma 4 Developer Agent Competition**. 
@@ -138,7 +138,7 @@ Gemma4Developer_Kaggle/
 │   ├── create_kaggle_notebook.py      # Standalone companion notebook builder
 │   └── generate_paper_pdf.py          # LaTeX/HTML paper PDF compiler
 ├── papers/                       # Kaggle Paper Track submission artifacts
-│   ├── PatchGRPO_Paper_Latest.pdf     # Official 4-page arXiv paper PDF
+│   ├── PatchGRPO_ArXiv_Paper.pdf     # Official 4-page arXiv paper PDF
 │   ├── patchgrpo_arxiv_paper.tex      # LaTeX source
 │   └── patchgrpo_arxiv_paper.html     # HTML pre-rendering
 ├── notebooks/                    # Kaggle runnable notebooks
@@ -204,7 +204,7 @@ Due to GitHub's 100 MB per-file limit, all full-precision 489 MB LoRA weights an
 
 ## 7. Research Paper & Companion Notebook
 
-- **Research Paper (PDF)**: [`papers/PatchGRPO_Paper_Latest.pdf`](papers/PatchGRPO_Paper_Latest.pdf)
+- **Research Paper (PDF)**: [`papers/PatchGRPO_ArXiv_Paper.pdf`](papers/PatchGRPO_ArXiv_Paper.pdf)
 - **Paper Track Title**: *PatchGRPO: Graph-Constrained Group Relative Policy Optimization for Verifiable Autonomous Program Repair*
 - **Companion Notebook**: [`notebooks/patchgrpo_training_and_inference.ipynb`](notebooks/patchgrpo_training_and_inference.ipynb)
 - **Engineering Changelog**: [`fixes.md`](fixes.md) (Complete trajectory analysis and ablation chronicle)

@@ -49,6 +49,7 @@ gemma-4-developer-agent/wheels/
 gemma-4-developer-agent/*.zip
 dashboard/*
 *.html
+!papers/*.html
 docs/*
 
 gemma-4-developer-agent/submission/adapters/main_lora/*.safetensors
