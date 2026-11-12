@@ -1,0 +1,7 @@
+# Participant evaluation configuration for Stage 1 inference.
+# Controls per-task execution budgets and sandbox command timeouts.
+evaluation:
+  timeout_seconds: 240   # 4 minutes max per individual bash command
+  max_tool_calls: 28     # Generous room for AST symbol search, file inspection, and targeted verification
+  max_time_minutes: 15   # 15 minutes max per task (~6.25 hours total across 25 tasks; well within Kaggle 9-hr ceiling)
+  max_turns: 28          # 28 LLM reasoning turns max

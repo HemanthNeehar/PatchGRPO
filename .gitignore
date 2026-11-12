@@ -47,15 +47,11 @@ workspace/
 gemma-4-developer-agent/snapshots/
 gemma-4-developer-agent/wheels/
 gemma-4-developer-agent/*.zip
-gemma-4-developer-agent/docker/
-gemma-4-developer-agent/embeddings/
-gemma-4-developer-agent/graphs/
-gemma-4-developer-agent/sample_submission/
-gemma-4-developer-agent/sandbox/
-gemma-4-developer-agent/submission/
 dashboard/*
 *.html
 docs/*
+
+gemma-4-developer-agent/submission/adapters/main_lora/*.safetensors
 
 
 
