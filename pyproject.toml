@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma4-developer-agent"
+version = "0.1.0"
+description = "Autonomous Developer Agent and Evaluation Framework for the Gemma 4 Developer Agent Kaggle Competition"
+authors = [
+    { name = "Competitor Team" }
+]
+readme = "GUIDE.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-adk",
+    "litellm>=1.40.0",
+    "pydantic>=2.6.0",
+    "pyyaml>=6.0.1",
+    "networkx>=3.1",
+    "numpy>=1.26.0",
+    "pandas>=2.1.0",
+    "pyarrow>=14.0.0",
+    "safetensors>=0.4.2",
+    "pytest>=7.4.0",
+    "pytest-timeout>=2.1.0",
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "docker>=6.1.0",
+    "httpx>=0.25.0",
+    "jinja2>=3.1.2",
+    "click>=8.1.0",
+]
+
+[project.optional-dependencies]
+train = [
+    "torch>=2.2.0",
+    "transformers>=4.40.0",
+    "accelerate>=0.29.0",
+    "peft>=0.10.0",
+    "bitsandbytes>=0.43.0",
+    "trl>=0.8.0",
+    "datasets>=2.18.0",
+]
+server = [
+    "vllm>=0.4.0",
+]
+dev = [
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "pytest-cov>=4.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "swegemma*", "harness*", "scripts*"]

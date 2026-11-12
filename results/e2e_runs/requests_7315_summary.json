@@ -1,0 +1,15 @@
+{
+  "instance_id": "requests_7315",
+  "target_matched": false,
+  "ground_truth_files": [
+    "src/requests/adapters.py"
+  ],
+  "agent_files": [],
+  "syntax_valid": true,
+  "patch_size_bytes": 65,
+  "pytest_resolved": false,
+  "turns_used": 0,
+  "total_tokens": 0,
+  "duration_sec": 31.77,
+  "tool_counts": {}
+}

@@ -1,0 +1,82 @@
+# ==============================================================================
+# PatchGRPO Project .gitignore
+# Enterprise-grade exclusions for Python, Kaggle, heavy weights, and workspaces
+# ==============================================================================
+
+# --- Python & Build Artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Large Weight & Checkpoint Folders ---
+main_lora_*
+adapters_backup_*
+*.pt
+*.bin
+*.ckpt
+
+# Exclude large safetensors files (>100MB GitHub limit) except the tiny sample starter adapter
+*.safetensors
+!gemma-4-developer-agent/sample_submission/**
+
+# --- Large Compressed Archives ---
+*.zip
+*.tar
+*.tgz
+*.tar.gz
+*.7z
+*.rar
+
+# --- Evaluation Harness Runtime & Snapshots ---
+workspace/
+gemma-4-developer-agent/snapshots/
+gemma-4-developer-agent/wheels/
+gemma-4-developer-agent/*.zip
+gemma-4-developer-agent/docker/
+gemma-4-developer-agent/embeddings/
+gemma-4-developer-agent/graphs/
+gemma-4-developer-agent/sample_submission/
+gemma-4-developer-agent/sandbox/
+gemma-4-developer-agent/submission/
+dashboard/*
+*.html
+docs/*
+
+
+
+# --- Internal Task Guides & Timelines ---
+GUIDE.md
+WeekByWeek_Plan.csv
+
+# --- IDE & OS Metadata ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+~$*
+*.docx
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secrets & Environment Configurations ---
+.env
+*.pem
+*.key
+credentials.json

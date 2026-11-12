@@ -1,0 +1,134 @@
+{
+  "run_id": "week1_baseline_mock",
+  "timestamp": "2026-10-07 21:33",
+  "model": "openai/google/gemma-4-E4B-it",
+  "api_base": "http://localhost:8080/v1",
+  "metrics": {
+    "total_tasks": 5,
+    "resolved_count": 2,
+    "pass_rate_pct": 40.0,
+    "localized_count": 0,
+    "localization_rate_pct": 0.0,
+    "syntax_valid_pct": 100.0,
+    "avg_turns": 1.0,
+    "avg_tokens": 120,
+    "avg_latency_sec": 1.1
+  },
+  "tasks": [
+    {
+      "instance_id": "fastapi_14786",
+      "target_matched": false,
+      "ground_truth_files": [
+        "fastapi/security/utils.py"
+      ],
+      "agent_files": [],
+      "syntax_valid": true,
+      "patch_size_bytes": 1201,
+      "pytest_resolved": false,
+      "turns_used": 1,
+      "total_tokens": 120,
+      "duration_sec": 1.38,
+      "tool_counts": {
+        "read_file": 1,
+        "submit_patch": 1
+      },
+      "tier": "Tier 1: Surgical Fix",
+      "complexity_level": "Low (8 lines)",
+      "domain": "Security / Header Parsing",
+      "ground_truth_lines": 8,
+      "status": "ATTEMPTED"
+    },
+    {
+      "instance_id": "requests_7315",
+      "target_matched": false,
+      "ground_truth_files": [
+        "src/requests/adapters.py"
+      ],
+      "agent_files": [],
+      "syntax_valid": true,
+      "patch_size_bytes": 65,
+      "pytest_resolved": true,
+      "turns_used": 1,
+      "total_tokens": 120,
+      "duration_sec": 0.42,
+      "tool_counts": {
+        "read_file": 1,
+        "submit_patch": 1
+      },
+      "tier": "Tier 2: Targeted Protocol Fix",
+      "complexity_level": "Low-Med (11 lines)",
+      "domain": "HTTP / URL Path Parsing",
+      "ground_truth_lines": 11,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "rich_4077",
+      "target_matched": false,
+      "ground_truth_files": [
+        "rich/file_proxy.py"
+      ],
+      "agent_files": [],
+      "syntax_valid": true,
+      "patch_size_bytes": 0,
+      "pytest_resolved": true,
+      "turns_used": 1,
+      "total_tokens": 120,
+      "duration_sec": 0.84,
+      "tool_counts": {
+        "read_file": 1,
+        "submit_patch": 1
+      },
+      "tier": "Tier 3: Stream I/O & Delegation",
+      "complexity_level": "Medium (9 lines)",
+      "domain": "Terminal / Console Stream",
+      "ground_truth_lines": 9,
+      "status": "PASS"
+    },
+    {
+      "instance_id": "fastapi_14873",
+      "target_matched": false,
+      "ground_truth_files": [
+        "fastapi/routing.py"
+      ],
+      "agent_files": [],
+      "syntax_valid": true,
+      "patch_size_bytes": 1201,
+      "pytest_resolved": false,
+      "turns_used": 1,
+      "total_tokens": 120,
+      "duration_sec": 1.41,
+      "tool_counts": {
+        "read_file": 1,
+        "submit_patch": 1
+      },
+      "tier": "Tier 4: Routing & Lifecycle",
+      "complexity_level": "Med-High (37 lines)",
+      "domain": "Routing / Lifecycle Hooks",
+      "ground_truth_lines": 37,
+      "status": "ATTEMPTED"
+    },
+    {
+      "instance_id": "fastapi_15661",
+      "target_matched": false,
+      "ground_truth_files": [
+        "scripts/prepare_release.py"
+      ],
+      "agent_files": [],
+      "syntax_valid": true,
+      "patch_size_bytes": 1288,
+      "pytest_resolved": false,
+      "turns_used": 1,
+      "total_tokens": 120,
+      "duration_sec": 1.44,
+      "tool_counts": {
+        "read_file": 1,
+        "submit_patch": 1
+      },
+      "tier": "Tier 5: Macro Architectural Stress-Test",
+      "complexity_level": "High (219 lines)",
+      "domain": "Multi-Module Architecture",
+      "ground_truth_lines": 219,
+      "status": "ATTEMPTED"
+    }
+  ]
+}

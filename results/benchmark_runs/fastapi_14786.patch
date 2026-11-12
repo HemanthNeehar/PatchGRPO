@@ -1,0 +1,33 @@
+diff --git a/docs/en/docs/img/sponsors/bump-sh-banner.png b/docs/en/docs/img/sponsors/bump-sh-banner.png
+old mode 100755
+new mode 100644
+diff --git a/docs/en/docs/img/sponsors/bump-sh.png b/docs/en/docs/img/sponsors/bump-sh.png
+old mode 100755
+new mode 100644
+diff --git a/docs/en/docs/img/sponsors/mongodb-banner.png b/docs/en/docs/img/sponsors/mongodb-banner.png
+old mode 100755
+new mode 100644
+diff --git a/docs/en/docs/img/sponsors/mongodb.png b/docs/en/docs/img/sponsors/mongodb.png
+old mode 100755
+new mode 100644
+diff --git a/docs/en/docs/img/sponsors/porter-banner.png b/docs/en/docs/img/sponsors/porter-banner.png
+old mode 100755
+new mode 100644
+diff --git a/docs/en/docs/img/sponsors/porter.png b/docs/en/docs/img/sponsors/porter.png
+old mode 100755
+new mode 100644
+diff --git a/scripts/coverage.sh b/scripts/coverage.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/format.sh b/scripts/format.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/lint.sh b/scripts/lint.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/test-cov-html.sh b/scripts/test-cov-html.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/test.sh b/scripts/test.sh
+old mode 100755
+new mode 100644

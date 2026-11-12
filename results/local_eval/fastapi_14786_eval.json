@@ -1,0 +1,17 @@
+{
+  "instance_id": "fastapi_14786",
+  "repo": "fastapi/fastapi",
+  "status": "evaluated",
+  "target_files_matched": true,
+  "ground_truth_files": [
+    "fastapi/security/utils.py"
+  ],
+  "agent_modified_files": [
+    "fastapi/security/utils.py"
+  ],
+  "syntax_valid": true,
+  "patch_size_bytes": 304,
+  "tool_calls_count": 0,
+  "resolved_tests": null,
+  "error_message": null
+}

@@ -1,0 +1,18 @@
+{
+  "instance_id": "fastapi_14786",
+  "target_matched": false,
+  "ground_truth_files": [
+    "fastapi/security/utils.py"
+  ],
+  "agent_files": [],
+  "syntax_valid": true,
+  "patch_size_bytes": 1201,
+  "pytest_resolved": false,
+  "turns_used": 1,
+  "total_tokens": 120,
+  "duration_sec": 1.21,
+  "tool_counts": {
+    "read_file": 1,
+    "submit_patch": 1
+  }
+}
