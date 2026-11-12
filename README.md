@@ -182,10 +182,23 @@ python scripts/prepare_ablation_submission.py --variant step4
 To interpolate weights across multiple training checkpoints:
 ```bash
 python scripts/create_model_soup.py \
-    --checkpoints main_lora_online_step8-20261107T113311Z-1-001/main_lora_online_step8 0.5 \
-                  main_lora_best-20261106T155831Z-1-001/main_lora_best 0.5 \
+    --mode dual \
+    --step8_dir main_lora_online_step8-20261107T113311Z-1-001/main_lora_online_step8 \
+    --best_dir main_lora_best-20261106T155831Z-1-001/main_lora_best \
+    --step8_weight 0.5 \
+    --best_weight 0.5 \
     --output_dir gemma-4-developer-agent/submission/adapters/main_lora
 ```
+
+### 📦 Pre-Trained Weights & Checkpoint Downloads
+Due to GitHub's 100 MB per-file limit, all full-precision 489 MB LoRA weights and ablation submission packages are hosted on Google Drive:
+- **[Download Official Checkpoints & Submissions (Google Drive)](https://drive.google.com/drive/folders/1pgYMH3i-Hp1HCKqPVkkMDwwD4_MuoH1l?usp=sharing)**
+  - `submission_modelsoup_017.zip` (Official Champion Package — 17.0% Pass@1)
+  - `submission_ablation_step8.zip` (Peak Intermediate Checkpoint Ablation — 12.0% Pass@1)
+  - `submission_ablation_step4.zip` (Early Intermediate Checkpoint Ablation)
+  - `main_lora_best.zip` (Raw High-Water Mark Adapter Checkpoint)
+  - `main_lora_online_step8.zip` (Raw Step 8 Generalist Checkpoint Adapter)
+  - `main_lora_online_step4.zip` (Raw Step 4 Early Checkpoint Adapter)
 
 ---
 
